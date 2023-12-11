@@ -39,7 +39,7 @@ def pay_amount(_choice_):
     nickels = input("Enter Nickels: ")
     pennies = input("Enter Pennies: ")
 
-    fees = float(quarters) * .25 + float(dimes) * .1 + float(nickels) * .05 + float(pennies) * .1
+    fees = float(quarters) * 0.25 + float(dimes) * 0.1 + float(nickels) * 0.05 + float(pennies) * 0.01
 
     if fees < drink_price:
         print("Sorry that is not enough money , Money Refunded!")
