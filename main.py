@@ -69,7 +69,7 @@ def check_drink_availability(_choice_):
     drink_ingredients = MENU[_choice_]["ingredients"]
     for ingredient in drink_ingredients:
         if drink_ingredients[ingredient] > resources[ingredient]:
-            print("Sorry this drink is not available at the moment")
+            print(f"Sorry there is not enough {ingredient}")
             return False
     return True
 
